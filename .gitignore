@@ -1,0 +1,21 @@
+.hlx/*
+coverage/*
+logs/*
+node_modules/*
+
+helix-importer-ui
+.DS_Store
+*.bak
+.idea
+
+# Ensure these files are tracked
+!CLAUDE.md
+!AGENTS.md
+
+# >>> stardust
+.env
+.env.*
+# <<< stardust
+
+# stardust deploy: DA media binaries are uploaded to DA, not code
+content/media/

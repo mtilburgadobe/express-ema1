@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EMA Demo Test 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="See the story">
+  <meta property="og:title" content="EMA Demo Test 1">
+  <meta property="og:description" content="See the story">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="home-proposed.css">
+</head>
+<body data-stardust-page="home" data-stardust-marker="ema-demo-replica">
+  <main>
+    <section class="hero" aria-label="Event Site">
+      <div class="hero-media"><img src="media/hero-ferris-wheel.jpg" alt="" width="3836" height="2560" fetchpriority="high"></div>
+      <div class="hero-header">
+        <hgroup class="hero-view">
+          <span class="gradient-overlay" aria-hidden="true"></span>
+          <h1>Event Site</h1>
+          <p class="subtitle">• School or Class Name •</p>
+        </hgroup>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <h2>Event details at a glance</h2>
+      <h3>List the date, time, location, RSVP, and any other important information about the event in bulletpoints here.</h3>
+    </section>
+
+    <section class="window-section" aria-hidden="true">
+      <div class="window-media"><img src="media/window-bunting.jpg" alt="" width="3416" height="2560"></div>
+    </section>
+
+    <section class="text-section">
+      <h2>Purpose &amp; Background</h2>
+      <h3>Why is this event being held?</h3>
+      <p>Who is it for?</p>
+      <p>Is it a new event or a regular occurrance?</p>
+      <p>What should attendees expect, and why would they want to attend?</p>
+    </section>
+
+    <section class="window-section pos-popcorn" aria-hidden="true">
+      <div class="window-media"><img src="media/window-popcorn.jpg" alt="" width="3840" height="2560"></div>
+    </section>
+
+    <section class="text-section">
+      <h2>Contact information</h2>
+      <h3>List phone numbers and email addresses here for attendees to ask questions or confirm attendance.</h3>
+      <p class="button-container"><a class="button" href="http://www.example.com" rel="nofollow noreferrer">RSVP</a></p>
+      <p>We look forward to seeing you at the event!</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Adobe links">
+      <a href="http://www.adobe.com/legal/terms.html" target="_blank">Terms of Service</a>
+      <a href="http://www.adobe.com/go/privacy" target="_blank">Privacy Policy</a>
+      <a href="https://new.express.adobe.com/webpage/qCZXJyTGNbO7p" target="_blank">Report Abuse</a>
+    </nav>
+  </footer>
+
+  <a class="express-badge" href="https://new.express.adobe.com/webpage/template-picker?locale=en-US&amp;category=photos&amp;promoid=HVQ7WR9H&amp;mv=other" target="_blank" rel="noopener noreferrer">
+    <span class="badge-btn"><img src="/icons/adobe-express.svg" alt="" width="25" height="25"><span class="badge-text">Made in Adobe Express</span></span>
+  </a>
+
+  <button type="button" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M13.55029,5.2373l-3.00488-3.00586c-.14062-.14062-.33154-.21973-.53027-.21973s-.38965.0791-.53027.21973l-3.00537,3.00586c-.29297.29297-.29297.76758,0,1.06055s.76758.29297,1.06055,0l1.70996-1.71045v12.6626c0,.41406.33594.75.75.75s.75-.33594.75-.75V4.55737l1.73975,1.74048c.14648.14648.33838.21973.53027.21973s.38379-.07324.53027-.21973c.29297-.29297.29297-.76758,0-1.06055Z" fill="currentColor"/></svg>
+  </button>
+
+  <script>
+    // Motion observed on the live viewer (stardust/replica/motion/home-*-observe.json):
+    // hero image zooms 1 -> 1.1 over the first viewport; hero title rises
+    // 0 -> -81px (<=767px: -141.5px) over the first half viewport; back-to-top
+    // appears once scrolled one viewport.
+    (() => {
+      const media = document.querySelector('.hero .hero-media');
+      const view = document.querySelector('.hero .hero-view');
+      const btt = document.querySelector('.back-to-top');
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let ticking = false;
+      const update = () => {
+        ticking = false;
+        const y = window.scrollY;
+        const vh = window.innerHeight;
+        if (!reduce) {
+          const p = Math.min(Math.max(y / vh, 0), 1);
+          media.style.transform = `scale(${1 + 0.1 * p})`;
+          const cap = window.innerWidth <= 767 ? 141.5 : 81;
+          const q = Math.min(Math.max(y / (vh / 2), 0), 1);
+          view.style.transform = `translate3d(0, ${-cap * q}px, 0)`;
+        }
+        btt.classList.toggle('show', y >= vh);
+      };
+      window.addEventListener('scroll', () => {
+        if (!ticking) { ticking = true; requestAnimationFrame(update); }
+      }, { passive: true });
+      window.addEventListener('resize', update);
+      btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' }));
+      update();
+    })();
+  </script>
+</body>
+</html>

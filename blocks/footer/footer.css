@@ -1,0 +1,152 @@
+footer {
+  background-color: var(--footer-background-color);
+}
+
+footer .footer > div {
+  margin: 0;
+}
+
+footer .footer .section {
+  margin: 0;
+  padding: 0;
+}
+
+/* links bar — right padding = source's 15px + whitespace + empty cookie-preferences anchor */
+footer .footer .footer-links .default-content-wrapper {
+  padding: 15px 39px 15px 15px;
+  line-height: 16px;
+  text-align: right;
+}
+
+footer .footer .footer-links p {
+  margin: 0;
+  line-height: 16px;
+}
+
+footer .footer .footer-links a:any-link {
+  display: inline-block;
+  padding: 0 10px;
+  color: rgb(255 255 255);
+  font-family: var(--chrome-font-family);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+footer .footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* floating "Made in Adobe Express" badge */
+footer .footer .footer-badge p {
+  margin: 0;
+}
+
+footer .footer .footer-badge-link:any-link {
+  position: fixed;
+  left: 16px;
+  bottom: 60px;
+  z-index: 9999;
+  display: block;
+  text-decoration: none;
+}
+
+footer .footer .footer-badge-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2.5px 6px 2.5px 2.5px;
+  border: 2px outset rgb(0 0 0);
+  border-radius: 6.3px;
+  background: rgb(255 255 255);
+}
+
+footer .footer .footer-badge-btn .icon {
+  flex-shrink: 0;
+  width: 25.32px;
+  height: 24.69px;
+}
+
+footer .footer .footer-badge-text {
+  color: #000b1d;
+  font-family: var(--chrome-font-family);
+  font-size: 12.9px;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+/* back-to-top */
+footer .back-to-top {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 350;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 22px;
+  background-color: rgb(255 255 255 / 66%);
+  backdrop-filter: blur(7.4px);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translate3d(0, 8px, 0);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+footer .back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate3d(0, 0, 0);
+}
+
+footer .back-to-top:hover {
+  background-color: rgb(255 255 255 / 90%);
+}
+
+footer .back-to-top:focus-visible {
+  outline: #222 solid 2px;
+  outline-offset: 2px;
+}
+
+footer .back-to-top:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+footer .back-to-top img {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+@media (width >= 768px) {
+  footer .back-to-top {
+    right: 24px;
+    bottom: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+  }
+}
+
+@media (width <= 480px) {
+  footer .footer .footer-badge-link:any-link {
+    bottom: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  footer .back-to-top {
+    transition: none;
+  }
+}

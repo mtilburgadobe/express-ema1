@@ -1,0 +1,109 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-01T11:35:58Z",
+    "mode": "bounded-single",
+    "synthesizedFrom": [
+      "stardust/current/pages/webpage-qczxjytgnbo7p.json",
+      "stardust/replica/lifted-tokens.json"
+    ]
+  },
+  "palette": {
+    "page-bg": "rgb(185,215,240)",
+    "hero-fallback-bg": "#484848",
+    "heading": "rgb(59,84,46)",
+    "subheading": "rgb(64,96,122)",
+    "body": "rgb(25,60,89)",
+    "title": "rgb(185,215,240)",
+    "subtitle": "rgb(240,255,192)",
+    "accent-lime": "rgb(240,255,192)",
+    "accent-lime-rule": "rgba(240,255,192,0.9)",
+    "button-hover-bg": "rgb(222,255,115)",
+    "button-hover-fg": "rgb(0,0,0)",
+    "footer-bg": "rgb(68,68,68)",
+    "footer-link": "rgb(255,255,255)"
+  },
+  "fonts": {
+    "display": "vina-sans (OFL Vina Sans, self-hosted)",
+    "text": "source-serif-4 (OFL Source Serif 4, self-hosted)",
+    "button": "poppins (OFL Poppins 400, self-hosted)",
+    "chrome": "adobe-clean (licensed \u2014 substituted, family name kept first)"
+  },
+  "type": {
+    "title": {
+      "desktop": "88px/1.3",
+      "mobile<=767": "47px/1.3",
+      "shadow": "0 2px 2px rgba(0,0,0,.25)",
+      "maxHeight": "3.9em"
+    },
+    "subtitle": {
+      "desktop": "20px/1.5",
+      "mobile<=767": "17px/1.5",
+      "marginTop": "1rem"
+    },
+    "h2": {
+      "desktop": "56px/1.3 uppercase",
+      "mobile<=767": "34px/1.3",
+      "paddingBottom": "14px",
+      "rule": "120x3 centered, accent-lime-rule"
+    },
+    "h3": {
+      "desktop": "27px/1.5 italic 700",
+      "mobile<=767": "20px/1.5"
+    },
+    "p": {
+      "desktop": "18px/1.6",
+      "mobile<=767": "17px/1.6",
+      "whiteSpace": "pre-wrap"
+    },
+    "button": {
+      "desktop": "poppins 16px/1.6 uppercase, padding 7px 17px",
+      "mobile<=767": "15px, padding 5px 17px",
+      "radius": "0.2em"
+    },
+    "footer-link": "adobe-clean 300 12px/12px, padding 0 10px"
+  },
+  "layout": {
+    "hero": {
+      "height": "100vh",
+      "padding": "64px 5% (mobile 32px 5%)",
+      "view": "max-width 89%; >=1300px padding 0 20% 0 10%",
+      "overlay": "left/right -25%, top -50%, bottom -64px; linear-gradient(0deg, rgba(0,0,0,.5), transparent)",
+      "imagePos": "48.9498538062686% 0%"
+    },
+    "text-section": {
+      "padding": "80px 20% (mobile 40px 7%)",
+      "flowGap": "40px (mobile 20px)"
+    },
+    "window-section": {
+      "height": "50vh",
+      "image": "viewport-fixed, cover",
+      "imagePos": [
+        "50% 50%",
+        "58.88270786830358% 93.73039498713345%"
+      ]
+    },
+    "footer": {
+      "height": "46px",
+      "padding": "15px",
+      "align": "right"
+    },
+    "badge": {
+      "position": "fixed left 16px bottom 60px (<=480px: bottom 20px)",
+      "btn": "white, radius 6.3px, 2px outset #000, padding 2.5px 6px 2.5px 2.5px, gap 5px",
+      "text": "Adobe Clean 800 12.9px/1 -2% #000B1D"
+    },
+    "backToTop": {
+      "position": "fixed right 24px bottom 24px 56x56 r28 (<=767: 16px, 44x44 r22)",
+      "bg": "rgba(255,255,255,.66) blur(7.4px)",
+      "color": "#222",
+      "showAt": "scrollY >= 1 viewport"
+    }
+  },
+  "motion": {
+    "heroBgZoom": "scale 1 \u2192 1.1 linearly over first 100vh of scroll",
+    "heroTitleParallax": "translateY 0 \u2192 -81px (desktop) / -141.5px (<=767) over first 50vh of scroll",
+    "windowSections": "image fixed to viewport (window reveal)",
+    "backToTop": "fade+8px rise 0.2s ease when scrollY >= 100vh"
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-01T09:51:24.131Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "webpage-qczxjytgnbo7p",
+  "url": "https://new.express.adobe.com/webpage/qCZXJyTGNbO7p",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-01T09:51:24.131Z",
+  "finalUrl": "https://new.express.adobe.com/webpage/qCZXJyTGNbO7p",
+  "title": "EMA Demo Test 1",
+  "description": null,
+  "og": {
+    "title": "EMA Demo Test 1",
+    "description": "See the story",
+    "image": "https://new.express.adobe.com/webpage/qCZXJyTGNbO7p/resources/1790847788451?asset_id=rendition",
+    "type": "website"
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Event Site"
+    }
+  ],
+  "body": [
+    "• School or Class Name •"
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "View Screen Reader-Friendly Version",
+      "href": "?page-mode=static"
+    },
+    {
+      "label": "Made in Adobe Express",
+      "href": null
+    }
+  ],
+  "links": [
+    "https://new.express.adobe.com/webpage/qCZXJyTGNbO7p?page-mode=static",
+    "http://www.example.com/",
+    "http://www.adobe.com/legal/terms.html",
+    "http://www.adobe.com/go/privacy",
+    "https://new.express.adobe.com/webpage/qCZXJyTGNbO7p#",
+    "https://new.express.adobe.com/webpage/template-picker?locale=en-US&category=photos&promoid=HVQ7WR9H&mv=other",
+    "http://helpx.adobe.com/support.html",
+    "http://www.adobe.com/go/tou"
+  ],
+  "media": {
+    "imgs": [],
+    "allImgCount": 0,
+    "cssBackgrounds": [
+      "https://new.express.adobe.com/webpage/qCZXJyTGNbO7p/resources/04caee6f-a3ea-4588-bcbd-41765b430653?asset_id=04caee6f-a3ea-4588-bcbd-41765b430653&image_assets=false&size=3836",
+      "https://new.express.adobe.com/webpage/qCZXJyTGNbO7p/resources/32ece642-7575-4989-8236-e5b8e9576032?asset_id=32ece642-7575-4989-8236-e5b8e9576032&image_assets=false&size=3416",
+      "https://new.express.adobe.com/webpage/qCZXJyTGNbO7p/resources/9aa913d3-9d5f-462a-ab18-477e40271bb5?asset_id=9aa913d3-9d5f-462a-ab18-477e40271bb5&image_assets=false&size=3840"
+    ],
+    "modals": [
+      "Report AbuseCloseIf you feel that the content of this page violates the Adobe Terms of Use, you may report this content by filling out this quick form.Your EmailRequiredInvalidYour NameRequiredWhy are you reporting this content?RequiredDefamationTrademark InfringementOffensive ContentRacist or Hate ContentSexually Explicit ContentOtherPlease provide a description of your concern.RequiredTo report a copyright violation, please follow the DMCA section in the Terms of Use.Cancel"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 1,
+    "mainTextLen": 17338,
+    "realImageCount": 0,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "new.express.adobe.com",
+        "path": "/webpage/static/experiments/chrome/chrome.js",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://new.express.adobe.com/webpage/static/experiments/chrome/chrome.js",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "new.express.adobe.com",
+        "path": "/webpage/qCZXJyTGNbO7p/branding",
+        "query": [
+          "api_key"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://new.express.adobe.com/webpage/qCZXJyTGNbO7p/branding",
+        "sameSite": true
+      },
+      {
+        "method": "PUT",
+        "host": "hz-gneiss.adobe.io",
+        "path": "/alias/qCZXJyTGNbO7p/count",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 200,
+        "bytes": 2,
+        "hits": 1,
+        "example": "https://hz-gneiss.adobe.io/alias/qCZXJyTGNbO7p/count",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "geo2.adobe.com",
+        "path": "/json/",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 58,
+        "hits": 1,
+        "example": "https://geo2.adobe.com/json/",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "adobeid-na1.services.adobe.com",
+        "path": "/ims/check/v6/token",
+        "query": [
+          "jslVersion"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://adobeid-na1.services.adobe.com/ims/check/v6/token",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "new.express.adobe.com",
+        "path": "/static/en-US.b0879b259516fa43.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://new.express.adobe.com/static/en-US.b0879b259516fa43.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "new.express.adobe.com",
+        "path": "/service/floodgate/fg/api/v3/feature",
+        "query": [
+          "clientId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://new.express.adobe.com/service/floodgate/fg/api/v3/feature",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "new.express.adobe.com",
+        "path": "/service/xcs-assets-cdn/unified",
+        "query": [
+          "locale"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://new.express.adobe.com/service/xcs-assets-cdn/unified",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "api2.branch.io",
+        "path": "/v1/pageview",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 28,
+        "hits": 2,
+        "example": "https://api2.branch.io/v1/pageview",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "adobeid-na1.services.adobe.com",
+        "path": "/ims/country_code/v1",
+        "query": [
+          "client_id"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://adobeid-na1.services.adobe.com/ims/country_code/v1",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "platform-cs.adobe.io",
+        "path": "/index",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.adobecloud.index+json",
+        "status": 200,
+        "bytes": 7313,
+        "hits": 1,
+        "example": "https://platform-cs.adobe.io/index",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "new.express.adobe.com",
+        "path": "/webpage/api/metadata/qCZXJyTGNbO7p",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 368,
+        "hits": 1,
+        "example": "https://new.express.adobe.com/webpage/api/metadata/qCZXJyTGNbO7p",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "api2.branch.io",
+        "path": "/v1/open",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 281,
+        "hits": 1,
+        "example": "https://api2.branch.io/v1/open",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "bps-il.adobe.io",
+        "path": "/users/{uuid}@anonymous/subscriptions",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/octet-stream",
+        "status": 403,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://bps-il.adobe.io/users/e6176b4f-c9a5-409b-a189-9ad14ae0df43@anonymous/subscriptions",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "jil.adobe.com",
+        "path": "/users/{uuid}@anonymous/",
+        "query": [
+          "include"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 503,
+        "bytes": 443,
+        "hits": 3,
+        "example": "https://jil.adobe.com/users/e6176b4f-c9a5-409b-a189-9ad14ae0df43@anonymous/",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "bam.nr-data.net",
+        "path": "/{n}/476fdc8ce5",
+        "query": [
+          "a",
+          "be",
+          "ck",
+          "dc",
+          "fe",
+          "fsh",
+          "perf",
+          "ptid",
+          "ref",
+          "rst",
+          "s",
+          "sa",
+          "t",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 199,
+        "hits": 1,
+        "example": "https://bam.nr-data.net/1/476fdc8ce5",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "sstats.adobe.com",
+        "path": "/ee/v1/interact",
+        "query": [
+          "configId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://sstats.adobe.com/ee/v1/interact",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "d2txqegjuzimaf.cloudfront.net",
+        "path": "/projectx_webapp.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 413,
+        "hits": 1,
+        "example": "https://d2txqegjuzimaf.cloudfront.net/projectx_webapp.json",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "arks-client.adobe.com",
+        "path": "/v2/{uuid}/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 2,
+        "hits": 1,
+        "example": "https://arks-client.adobe.com/v2/BBCC314C-4937-4CCD-B0A3-FDF0F0F7603C/settings",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "dcs.adobedc.net",
+        "path": "/collection/{hash}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://dcs.adobedc.net/collection/e891d3631145f2a3263cc9791b49ce1aa98295228a85170b4d9a0e9b7ac07d25",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "cdn123.forter.com",
+        "path": "/",
+        "query": [
+          "u",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 34,
+        "hits": 1,
+        "example": "https://cdn123.forter.com/",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "sstats.adobe.com",
+        "path": "/ee/v2/interact",
+        "query": [
+          "datastreamId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://sstats.adobe.com/ee/v2/interact",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "arks-client.adobe.com",
+        "path": "/fc/gt2/public_key/{uuid}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://arks-client.adobe.com/fc/gt2/public_key/BBCC314C-4937-4CCD-B0A3-FDF0F0F7603C",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "cdn0.forter.com",
+        "path": "/8a81eebba889/{hash}/prop.json",
+        "query": [
+          "_"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://cdn0.forter.com/8a81eebba889/581803e82ab743c4ba2970d5d4f8a88b/prop.json",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "commerce.adobe.com",
+        "path": "/amsterdam/log",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 201,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://commerce.adobe.com/amsterdam/log",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "581803e82ab743c4ba2970d5d4f8a88b-8a81eebba889.cdn.forter.com",
+        "path": "/prop.json",
+        "query": [],
+        "resourceType": "ping",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 2,
+        "hits": 3,
+        "example": "https://581803e82ab743c4ba2970d5d4f8a88b-8a81eebba889.cdn.forter.com/prop.json",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "cdn0.forter.com",
+        "path": "/8a81eebba889/{hash}/wpt.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 20,
+        "hits": 1,
+        "example": "https://cdn0.forter.com/8a81eebba889/581803e82ab743c4ba2970d5d4f8a88b/wpt.json",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "assets.adobedtm.com",
+        "count": 4
+      },
+      {
+        "host": "use.typekit.net",
+        "count": 1
+      },
+      {
+        "host": "app.link",
+        "count": 1
+      },
+      {
+        "host": "8a81eebba889.cdn4.forter.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 1,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 15,
+      "thirdPartyEndpoints": 12,
+      "thirdPartyScriptHosts": 4,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/webpage-qczxjytgnbo7p.png",
+  "renderedHtml": "pages/webpage-qczxjytgnbo7p.html"
+}
