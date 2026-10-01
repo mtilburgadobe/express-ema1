@@ -1,0 +1,4 @@
+mountpoints:
+  /:
+    url: https://content.da.live/mtilburgadobe/express-ema1/
+    type: markup
