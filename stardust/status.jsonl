@@ -3,3 +3,4 @@
 {"ts": "2026-10-01T11:35:58Z", "skill": "replica", "phase": "direction", "event": "done"}
 {"ts": "2026-10-01T11:35:58Z", "skill": "replica", "phase": "recreate", "event": "done"}
 {"ts": "2026-10-01T11:35:58Z", "skill": "replica", "phase": "gate", "event": "pass"}
+{"ts":"2026-10-01T13:15:44Z","phase":"deploy","status":"done","detail":"deployed gate PASS 1440 1.55% / 360 7.28%"}

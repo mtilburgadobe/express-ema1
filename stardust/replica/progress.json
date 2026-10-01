@@ -18,10 +18,10 @@
   ],
   "motion": {
     "observed": [
-      "hero bg zoom 1\u21921.1 over 100vh",
-      "hero title parallax 0\u2192-81px/-141.5px over 50vh",
+      "hero bg zoom 1→1.1 over 100vh",
+      "hero title parallax 0→-81px/-141.5px over 50vh",
       "window sections viewport-fixed reveal",
-      "back-to-top show at \u2265100vh"
+      "back-to-top show at ≥100vh"
     ],
     "implemented": [
       "all four (prototype inline JS + CSS)"
@@ -29,64 +29,6 @@
     "dead": []
   },
   "breakpoints": {
-    "1440": {
-      "iterations": 3,
-      "iterationLog": [
-        "iter1: popcorn window blank (lazy img under fixed parent) + Source Serif 4 static instance ~7% wide",
-        "iter2: eager window imgs; Source Serif 4 variable instanced at opsz=20 (live widths matched to 0.1px)",
-        "iter3: footer link whitespace + cookie-anchor spacing; adobe-clean metric fallback (size-adjust 89.5%)"
-      ],
-      "result": {
-        "structuralRed": 0,
-        "visualFlags": "3 justified (advisory)",
-        "pixelPct": 1.46,
-        "heightDelta": 0,
-        "chromeFooterPct": 1.49,
-        "pass": true
-      },
-      "justified": [
-        {
-          "probe": "content",
-          "flag": "\ud83d\udd34 ROLE SWAP \u00d77",
-          "why": "instrument false positive: live wraps heading text in <h2><span>; content-inventory classifies the span's own text as body. Symmetric semantic check (gates/home-1440/semantic-check.txt) confirms identical h1/h2/h3 levels for all 7 headings; visual-diff heading metrics match tag/text/color/size/family at both widths."
-        },
-        {
-          "probe": "content",
-          "flag": "\ud83d\udd34 MISSING CTA \u00d73 (footer)",
-          "why": "scope artifact: build footer is outside <main>; semantic check confirms Terms/Privacy hrefs identical; Report Abuse href '#'\u2192Express page per dynamics D-05"
-        },
-        {
-          "probe": "content",
-          "flag": "\ud83d\udfe0 font fork (adobe-clean)",
-          "why": "licensed Adobe font not rehosted; metric-adjusted local fallback",
-          "permanent": true
-        },
-        {
-          "probe": "content",
-          "flag": "\ud83d\udfe1 missing viewer chrome copy (Copy link, toasts, report modal, Next/Previous, SR-version link)",
-          "why": "dynamics D-05..D-08 dispositions"
-        },
-        {
-          "probe": "visual",
-          "flag": "STRETCHED IMAGE \u00d72-3",
-          "why": "intentional object-fit:cover \u2014 live uses background-size:cover"
-        },
-        {
-          "probe": "visual",
-          "flag": "CONTENT GAP main 1000px vs build",
-          "why": "live is a virtual scroller (document height = viewport); stitched heights match exactly (\u03940)"
-        }
-      ],
-      "residuals": [
-        {
-          "region": "x \u2265 W\u221216 strip",
-          "pct": 1.1,
-          "cause": "R-01 applied: viewer custom scrollbar removed",
-          "flaggedFor": "user"
-        }
-      ],
-      "captureState": []
-    },
     "360": {
       "iterations": 3,
       "iterationLog": [
@@ -105,51 +47,140 @@
       "justified": [
         {
           "probe": "content",
-          "flag": "\ud83d\udd34 ROLE SWAP \u00d77",
+          "flag": "🔴 ROLE SWAP ×7",
           "why": "instrument false positive: live wraps heading text in <h2><span>; content-inventory classifies the span's own text as body. Symmetric semantic check (gates/home-1440/semantic-check.txt) confirms identical h1/h2/h3 levels for all 7 headings; visual-diff heading metrics match tag/text/color/size/family at both widths."
         },
         {
           "probe": "content",
-          "flag": "\ud83d\udd34 MISSING CTA \u00d73 (footer)",
-          "why": "scope artifact: build footer is outside <main>; semantic check confirms Terms/Privacy hrefs identical; Report Abuse href '#'\u2192Express page per dynamics D-05"
+          "flag": "🔴 MISSING CTA ×3 (footer)",
+          "why": "scope artifact: build footer is outside <main>; semantic check confirms Terms/Privacy hrefs identical; Report Abuse href '#'→Express page per dynamics D-05"
         },
         {
           "probe": "content",
-          "flag": "\ud83d\udfe0 font fork (adobe-clean)",
+          "flag": "🟠 font fork (adobe-clean)",
           "why": "licensed Adobe font not rehosted; metric-adjusted local fallback",
           "permanent": true
         },
         {
           "probe": "content",
-          "flag": "\ud83d\udfe1 missing viewer chrome copy (Copy link, toasts, report modal, Next/Previous, SR-version link)",
+          "flag": "🟡 missing viewer chrome copy (Copy link, toasts, report modal, Next/Previous, SR-version link)",
           "why": "dynamics D-05..D-08 dispositions"
         },
         {
           "probe": "visual",
-          "flag": "STRETCHED IMAGE \u00d72-3",
-          "why": "intentional object-fit:cover \u2014 live uses background-size:cover"
+          "flag": "STRETCHED IMAGE ×2-3",
+          "why": "intentional object-fit:cover — live uses background-size:cover"
         },
         {
           "probe": "visual",
           "flag": "CONTENT GAP main 1000px vs build",
-          "why": "live is a virtual scroller (document height = viewport); stitched heights match exactly (\u03940)"
+          "why": "live is a virtual scroller (document height = viewport); stitched heights match exactly (Δ0)"
         }
       ],
       "residuals": [
         {
-          "region": "x \u2265 W\u221216 strip",
+          "region": "x ≥ W−16 strip",
           "pct": 4.4,
           "cause": "R-01 applied: viewer custom scrollbar removed",
           "flaggedFor": "user"
         },
         {
-          "region": "footer band y2839\u20132885, x0\u2013200",
+          "region": "footer band y2839–2885, x0–200",
           "pct": 6.65,
           "cause": "font-substitution: fixed 'Made in Adobe Express' badge (Adobe Clean 800, licensed) overlaps the footer at 360; badge text 124.5px vs 121.6px live. Footer links alone 1.98% (pass), back-to-top 0.64%.",
           "flaggedFor": "user"
         }
       ],
       "captureState": []
+    },
+    "1440": {
+      "iterations": 3,
+      "iterationLog": [
+        "iter1: popcorn window blank (lazy img under fixed parent) + Source Serif 4 static instance ~7% wide",
+        "iter2: eager window imgs; Source Serif 4 variable instanced at opsz=20 (live widths matched to 0.1px)",
+        "iter3: footer link whitespace + cookie-anchor spacing; adobe-clean metric fallback (size-adjust 89.5%)"
+      ],
+      "result": {
+        "structuralRed": 0,
+        "visualFlags": "3 justified (advisory)",
+        "pixelPct": 1.46,
+        "heightDelta": 0,
+        "chromeFooterPct": 1.49,
+        "pass": true
+      },
+      "justified": [
+        {
+          "probe": "content",
+          "flag": "🔴 ROLE SWAP ×7",
+          "why": "instrument false positive: live wraps heading text in <h2><span>; content-inventory classifies the span's own text as body. Symmetric semantic check (gates/home-1440/semantic-check.txt) confirms identical h1/h2/h3 levels for all 7 headings; visual-diff heading metrics match tag/text/color/size/family at both widths."
+        },
+        {
+          "probe": "content",
+          "flag": "🔴 MISSING CTA ×3 (footer)",
+          "why": "scope artifact: build footer is outside <main>; semantic check confirms Terms/Privacy hrefs identical; Report Abuse href '#'→Express page per dynamics D-05"
+        },
+        {
+          "probe": "content",
+          "flag": "🟠 font fork (adobe-clean)",
+          "why": "licensed Adobe font not rehosted; metric-adjusted local fallback",
+          "permanent": true
+        },
+        {
+          "probe": "content",
+          "flag": "🟡 missing viewer chrome copy (Copy link, toasts, report modal, Next/Previous, SR-version link)",
+          "why": "dynamics D-05..D-08 dispositions"
+        },
+        {
+          "probe": "visual",
+          "flag": "STRETCHED IMAGE ×2-3",
+          "why": "intentional object-fit:cover — live uses background-size:cover"
+        },
+        {
+          "probe": "visual",
+          "flag": "CONTENT GAP main 1000px vs build",
+          "why": "live is a virtual scroller (document height = viewport); stitched heights match exactly (Δ0)"
+        }
+      ],
+      "residuals": [
+        {
+          "region": "x ≥ W−16 strip",
+          "pct": 1.1,
+          "cause": "R-01 applied: viewer custom scrollbar removed",
+          "flaggedFor": "user"
+        }
+      ],
+      "captureState": []
     }
+  },
+  "deployed": {
+    "url": "https://main--express-ema1--mtilburgadobe.aem.page/",
+    "live": "https://main--express-ema1--mtilburgadobe.aem.live/",
+    "at": "2026-10-01T13:15:44.478Z",
+    "gate": {
+      "360": {
+        "pixelDiff": "7.28%",
+        "heightDelta": 0,
+        "verdict": "PASS"
+      },
+      "1440": {
+        "pixelDiff": "1.55%",
+        "heightDelta": 0,
+        "verdict": "PASS"
+      }
+    },
+    "runtime": {
+      "blocksLoaded": [
+        "hero",
+        "window",
+        "window",
+        "footer"
+      ],
+      "pageErrors": 0,
+      "images": "3/3 rendered (2000px natural)",
+      "plainHtmlAboutError": 0
+    },
+    "notes": [
+      "Org uses AEM config service: site registered via PUT admin.hlx.page/config/mtilburgadobe/sites/express-ema1.json; fstab.yaml added but redundant"
+    ]
   }
 }
